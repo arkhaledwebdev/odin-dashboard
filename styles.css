@@ -47,22 +47,38 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    align-items: center;
+    /* align-items: center; */
     justify-items: center;
 }
 
 .side-item {
     display: flex;
     flex-direction: row;
-    
+    align-items: center;
+    margin: 8px;
 }
 
-.side-item > img {
+.side-item > img , .top-header> img {
+    width: 25px;
+    margin-right: 16px;
+}
+
+.bot-header> img {
     width: 25px;
 }
 
-
-
 .header {
     grid-area: 1 / 2 / 2 / 3;
+    width: 100%;
+}
+
+.top-header , .bot-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+#search-input {
+    flex-grow: 1;
 }
